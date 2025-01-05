@@ -37,7 +37,7 @@ class Ticket(Document):
             frappe.throw("Please Enter A Serial Number")
 
         # تعيين الحقل المستخدم في الاستعلام بناءً على قيمة serial_now
-        search_field = "serial_no" if self.serial_now else "serial"
+        search_field = "serial_no" if self.serial_now else "serials"
 
         # التحقق من وجود الرقم التسلسلي المدخل بشكل مكرر في جدول Ticket Items
         check = frappe.db.sql(""" select serial, idx
