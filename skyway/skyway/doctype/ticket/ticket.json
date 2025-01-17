@@ -41,7 +41,9 @@
   "column_break_23",
   "payment_entry_status",
   "section_break_27",
-  "general_notes"
+  "general_notes",
+  "device_status",
+  "customer_problem"
  ],
  "fields": [
   {
@@ -244,6 +246,16 @@
    "fieldname": "serial_now",
    "fieldtype": "Check",
    "label": "Serial Now"
+  },
+  {
+   "fieldname": "device_status",
+   "fieldtype": "Text Editor",
+   "label": "Device Status"
+  },
+  {
+   "fieldname": "customer_problem",
+   "fieldtype": "Text Editor",
+   "label": "Customer Problem"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -260,7 +272,7 @@
    "link_fieldname": "ticket"
   }
  ],
- "modified": "2024-12-18 15:06:41.039036",
+ "modified": "2025-01-17 22:07:33.319186",
  "modified_by": "Administrator",
  "module": "Skyway",
  "name": "Ticket",
